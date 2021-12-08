@@ -68,3 +68,11 @@
 }
 
 #define LAYOUT_split_3x6_5 LAYOUT
+
+enum custom_keycodes {
+  ELIXIR_MAP = SAFE_RANGE,
+  ELIXIR_PIPE,
+  ELIXIR_FUNCTION,
+  NEW_SAFE_RANGE
+};
+
