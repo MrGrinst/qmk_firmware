@@ -50,11 +50,19 @@ bool encoder_update_kb(uint8_t index, bool clockwise) {
             tap_code(KC_VOLU);
         }
     } else if (index == 1) {
-        // Page up/Page down
-        if (clockwise) {
-            tap_code(KC_UP);
+        if (keyboard_report->mods & MOD_BIT(KC_LGUI)) {
+            if (clockwise) {
+                tap_code(KC_H);
+            } else {
+                tap_code(KC_L);
+            }
         } else {
-            tap_code(KC_DOWN);
+            // Up/down arrows
+            if (clockwise) {
+                tap_code(KC_UP);
+            } else {
+                tap_code(KC_DOWN);
+            }
         }
     }
     return true;
