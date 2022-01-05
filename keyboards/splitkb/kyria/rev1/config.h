@@ -100,4 +100,3 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define EE_HANDS
 #define HOLD_ON_OTHER_KEY_PRESS
-#define TAPPING_TERM 250
